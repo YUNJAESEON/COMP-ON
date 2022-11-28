@@ -3,17 +3,23 @@ h1 {
     font-size: 300%;
     text-align: center;
 }
-.title > a {
-    color: gray;
-  }
-  a{
-    text-decoration-line: none;
-  }
-ul {
-    list-style: none;
+ul{
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
 }
-li {
-    float: left;
-    margin-left: 50px;
-    text-align: center;
+ul li{
+  float: left;
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+a {
+  color: rgb(62, 61, 61);
+  text-decoration: none;
+  text-decoration-line: none;
+}
+a:hover {
+  color: black;
 }
