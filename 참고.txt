@@ -1,0 +1,7 @@
+네이버 view-source:https://www.naver.com/
+
+https://github.com/ddosang/front_school/tree/main/03.CSS
+https://velog.io/@ddosang/about
+https://www.edwith.org/htmlcss/lecture/16616?isDesc=false
+https://ofcourse.kr/html-course/li-%ED%83%9C%EA%B7%B8
+https://romanticdeveloper.tistory.com/59
