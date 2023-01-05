@@ -1,7 +1,6 @@
-h1 {
-  color: black;
-  font-size: 300%;
-  text-align: center;
+header{
+    margin-top: 0%;
+    padding-bottom: 0%;
 }
 
 h2 {
@@ -33,12 +32,14 @@ h6 {
     font-weight: lighter;
     margin-bottom: 10px;
 }
-
+.logo{
+    margin-top: 10px;
+}
 /*------menu---------*/
 nav.primary-navigation {
     margin: 0 auto;
     display: block;
-    padding: 120px 0 0 0;
+    padding: 10px 0 0 0;
     text-align: center;
     font-size: 16px;
 }
@@ -119,7 +120,7 @@ ul li ul li a {
   padding-top: 30px;
   text-align: center;
   background-color: #ebebec;
-  height: 800px;
+  height: 900px;
 }
 
 .intro > h2,
