@@ -33,7 +33,9 @@ h6 {
     margin-bottom: 10px;
 }
 .logo{
-    margin-top: 10px;
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
 }
 /*------menu---------*/
 nav.primary-navigation {
@@ -188,7 +190,7 @@ ul li ul li a {
 .stories{
     /*background-color: aliceblue;*/
     margin-top: 150px;
-    margin-bottom: 300px;
+    margin-bottom: 30px;
     text-align: center;
 
 }
@@ -246,7 +248,7 @@ body {
   footer {
     width: 100%;
     background-color: #fff;
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,7 +257,7 @@ body {
   }
 
   footer p{
-  margin-bottom: 5px;
+  margin-bottom: px;
   font-size: 13px;
   color: #949497;
 }
