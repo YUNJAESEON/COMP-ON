@@ -1,13 +1,30 @@
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+ }
+ @font-face {
+  font-family: 'LeferiPoint-WhiteObliqueA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 h2 {
     font-size: 40px;
     font-weight: 100;
     margin-top: 70px;
+    font-family: 'NanumBarunGothic'
 }
 
 h6 {
     font-size: 15px;
     font-weight: 100;
     margin-top: 25px;
+    font-family: 'NanumBarunGothic'
 }
 
 .contents1_bold{
@@ -15,6 +32,7 @@ h6 {
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 15px;
+    font-family: 'NanumBarunGothic'
 }
 
 .contents01{
@@ -22,6 +40,7 @@ h6 {
     font-weight: lighter;
     margin-bottom: 15px;
     margin-top: 15px;
+    font-family: 'NanumBarunGothic'
 }
 
 .contents02{
@@ -29,43 +48,48 @@ h6 {
     font-weight: lighter;
     margin-bottom: 20px;
     margin-top: 10px;
+    font-family: 'NanumBarunGothic'
 }
-/*------menu---------*/
+/*------menu-------*/
 nav.primary-navigation {
-    margin: 0 auto;
-    display: block;
-    padding: 10px 0 0 0;
-    text-align: center;
-    font-size: 16px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 0 0 0;
+  text-align: center;
+  font-size: 16px;
 }
 
 nav.primary-navigation ul li {
-    list-style: none;
-    margin: 0 auto;
-    border-left: 2px solid rgb(177, 175, 175);
-    display: inline-block;
-    padding: 0 60px;
-    position: relative;
-    text-decoration: none;
-    text-align: center;
-    font-family: arvo;
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid rgb(177, 175, 175);
+  display: inline-block;
+  padding: 0 60px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'NanumBarunGothic';
+  font-weight: 100;
 }
 
 nav.primary-navigation ul li:nth-last-child(1) {
-    border-right: 2px solid rgb(177, 175, 175);
+  border-right: 2px solid rgb(177, 175, 175);
 }
 
 nav.primary-navigation li a {
-    color: rgb(177, 175, 175);
-    font-weight: lighter;
-}
-nav.primary-navigation li a:hover {
-    color: black;
-    font-weight: bold;
-    transition: all 0.1s ease;
+  color: rgb(177, 175, 175);
+  font-weight: lighter;
 }
 
-nav.primary-navigation li:hover {cursor: pointer;}
+nav.primary-navigation li a:hover {
+  color: black;
+  font-weight: bold;
+  transition: all 0.1s ease;
+}
+
+nav.primary-navigation li:hover {
+  cursor: pointer;
+}
 
 a {text-decoration: none;}
 
@@ -109,7 +133,7 @@ a {text-decoration: none;}
     height: 50%;
     float :left;
     margin-top : 35px;
-    margin-bottom : -10px;
+    margin-bottom : 0px;
     text-align: center; 
     justify-content: center;
 }
@@ -130,10 +154,6 @@ a {text-decoration: none;}
 
   .link a i:hover {
     color: #636d6f;
-  }
-
-  .link img {
-    height: 3px;
   }
 
 /*------gallery-------*/
