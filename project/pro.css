@@ -19,6 +19,16 @@ h2 {
 
 li {list-style: none;}
 
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 
 /*------menu-------*/
 nav.primary-navigation {
@@ -68,24 +78,26 @@ a {text-decoration: none;}
     overflow: hidden;
     min-height: 100px;
     margin: 0 auto;
-    padding: 30px 0 100px;
+    padding: 30px 0 10px;
 }
 
 .contentsarea .contents_title {
     padding: 25px 0;
-    margin: 0 auto 100px;
+    margin: 0 auto 35px;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 1px;
     text-align: center;
     font-family: 'Lora', serif;
-    background-color: #252424;
+    background-color: #2a2a2a;
 }
 
 .contentsarea .contents_title h2 {
     color: rgb(209, 209, 209);
     font-size: 25px;
     font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
@@ -103,7 +115,7 @@ a {text-decoration: none;}
 }
 
 .contentsarea .contents_title2 {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     text-align: center;
     font-family: 'LeferiPoint-WhiteObliqueA';
 }
@@ -122,6 +134,71 @@ a {text-decoration: none;}
 
 
 /*--dropdown_list--*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.dropdown-label{
+  font-size : 12px;
+  margin : 10px;
+  font-weight : bold;
+  color : rgb(50, 50, 50);
+}
+
+.dropdown{
+  position : relative;
+  display : inline-block;
+}
+
+.dropbtn_icon{
+  font-family : 'Material Icons';
+}
+.dropbtn{
+  display : block;
+  border : 2px solid rgb(94, 94, 94);
+  border-radius : 4px;
+  background-color: #fcfcfc;
+  font-weight: 400;
+  color : rgb(124, 124, 124);
+  padding : 12px;
+  width :240px;
+  text-align: left;
+  cursor : pointer;
+  font-size : 12px;
+  z-index :1;
+  position : relative;
+}
+.dropdown-content{
+  display : none;
+  font-weight: 400;
+  background-color: #fcfcfc;
+  min-width : 240px;
+  border-radius: 8px;
+  height : 160px;
+  overflow : scroll;
+  box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
+}
+.dropdown-content::-webkit-scrollbar{
+  width : 5px;
+  height : 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb{
+  border-radius : 2px;
+  background-color :rgb(194, 194, 194)
+}
+
+.dropdown-content div{
+  display : block;
+  text-decoration : none;
+  color : rgb(37, 37, 37);
+  font-size: 12px;
+  padding : 12px 20px;
+}
+.dropdown-content div:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+.dropdown-content.show{
+  display : block;
+}
 .division {
     width: 100%;
     margin: 0 auto;
@@ -134,42 +211,44 @@ a {text-decoration: none;}
 }
 
 .project_area .project_option {
-    margin-bottom: 60px; 
+    margin-bottom: 50px; 
     text-align: right;}
 
 .project_area .project_option .dropdown {
     display: inline-block;}
 
     .division .contents_detail .dropdown, .dropup {
-        position:relative; width: 340px;}
+        position:relative; width: 250px;}
 
     .division .contents_detail .dropdown > button {
-        padding: 0 40px 0 15px; 
+        padding: 0 30px 0 15px; 
         width: 100%; 
-        height: 44px; 
+        height: 40px; 
         color: #252525; 
-        font-size: 18px; 
+        font-size: 15px; 
         text-align: left; 
         border: 1px solid 
         #d0d0d0; background: url('/static/sw/images/icon_arrow5.png') right 20px center no-repeat;}
     .division .contents_detail .dropdown:hover > button {
-        border: 1px solid #006eb7;}
+        border: 1px solid #000000;}
 
     .division .contents_detail .dropdown-menu {
         position:absolute; 
         top:43px; 
         left: 0;
-        -index:1000; 
+        Z-index:1000; 
         display:none; 
         width:100%; 
         text-align:left; 
-        border: 1px solid #006eb7; 
+        border: 1px solid #0099ff; 
         background: #fff;}
 
     .division .contents_detail .dropdown-menu > li {width: 100%; border-bottom: 1px solid #006eb7;}
     .division .contents_detail .dropdown-menu > li:last-child {border-bottom: 0;}
     .division .contents_detail .dropdown-menu > li > a {display:block; padding: 0 15px; line-height: 44px; white-space: nowrap;}
     .division .contents_detail .open > .dropdown-menu {display:block}
+ 
+/* button */
 
 /*project_list*/
 .project_area2 .project_list>li dl dd .name {
@@ -180,6 +259,25 @@ a {text-decoration: none;}
     font-family: 'NanumBarunGothic';
 }
 
+.link {
+    position: relative;
+    right: inherit;
+    margin-right: 10px;
+    display: flex;
+    list-style: none;
+    float: right;
+  }
+  
+  .link a i {
+    color :black;
+    font-size: 30px;
+    padding: 1px;
+  }
+
+  .link a i:hover {
+    color: #636d6f;
+  }
+
 .project_area2 .project_list {
     border-top: 1px solid #252525;
 }
@@ -187,10 +285,12 @@ a {text-decoration: none;}
 .project_area2 .project_list>li {
     border-bottom: 1px solid #d0d0d0;
     font-family: 'NanumBarunGothic';
+    padding-top: 4px;
+    margin-left: -40px;
 }
 
 .project_area2 .project_list>li:hover {
-    background: #f7fdff;
+    background: #f1fcff;
 }
 
 .project_area2 .project_list>li dl {
@@ -201,7 +301,7 @@ a {text-decoration: none;}
 
 .project_area2 .project_list>li dl dt {
     display: table-cell;
-    width: 120px;
+    width: 140px;
     text-align: center;
     vertical-align: middle;
     color: #525252;
@@ -218,17 +318,17 @@ a {text-decoration: none;}
 .project_area2 .project_list>li dl dd {
     display: table-cell;
     position: relative;
-    padding: 23px;
+    padding: 15px;
 }
 
 .project_area2 .project_list>li dl dd h3 {
-    margin-bottom: 8px;
-    color: #d30303;
+    margin-bottom: 5px;
+    color: #c90101;
     font-size: 22px;
 }
 
 .project_area2 .project_list>li dl dd h4 {
-    margin-bottom: 1px;
+    margin-bottom: -10px;
     font-size: 15px;
     font-weight: 200;
 }
@@ -255,11 +355,19 @@ a {text-decoration: none;}
     border: 1px solid #d0d0d0;
 }
 
-button {
-    border: 0 none;
-    background-color: transparent;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    overflow: visible;
+  /*--footer*/
+  footer {
+    width: 100%;
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  footer p{
+  margin-bottom: px;
+  font-size: 13px;
+  color: #949497;
 }
