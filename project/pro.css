@@ -237,6 +237,7 @@ a {text-decoration: none;}
 .project_area2 .project_list {
     border-top: 1px solid #252525;
     margin-top: 100px;
+    font-family: 'NanumBarunGothic';
 }
 
 .project_area2 .project_list>li {
@@ -254,6 +255,7 @@ a {text-decoration: none;}
     display: table;
     table-layout: fixed;
     width: 100%;
+    font-family: 'NanumBarunGothic';
 }
 
 .project_area2 .project_list>li dl dt {
@@ -282,12 +284,14 @@ a {text-decoration: none;}
     margin-bottom: 5px;
     color: #c90101;
     font-size: 22px;
+    font-family: 'NanumBarunGothic';
 }
 
 .project_area2 .project_list>li dl dd h4 {
     margin-bottom:15px;
     font-size: 15px;
     font-weight: 200;
+    font-family: 'NanumBarunGothic';
 }
 
 .project_area2 .project_list>li dl dd p {
