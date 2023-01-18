@@ -74,59 +74,27 @@
         }
       }
     </script>
-
-  <!--dropdown -->
+  
+        <div class="project_area">
           <div class="project_option">
-          <div class="dropdown dropselect">
-              <button type="button" data-toggle="dropdown" aria-expanded="true">
-                  <span class="dropdown-label">기수선택</span>
-              </button>
+            <div class="dropdown">
+                <button onclick="dp_menu()" class="dropdown-btn">기수선택<i class="fa-solid fa-angle-down"></i></button>
+                <div class="dropdown-submenu">
+                    <a href="#none">기수전체</a>
+                    <a href="#none">36기</a>
+                    <a href="#none">35기</a>
+                    <a href="#none">34기</a>
+                    <a href="#none">33기</a>
+                </div>
+            </div>
           </div>
           </div>
-
-          <ul class="dropdown-menu" role="menu">
-              <li>
-                <a data-value="ssmenu1"
-                  href="javascript: selcid('all')"
-                  class="dropselect-option"
-                  style="cursor: pointer">기수전체</a>
-              </li>
-
-              <li>
-                <a data-value="ssmenu1"
-                  href="javascript: selcid(36)"
-                  class="dropselect-option"
-                  style="cursor: pointer">36기</a>
-              </li>
-
-              <li>
-                <a data-value="ssmenu1"
-                  href="javascript: selcid(35)"
-                  class="dropselect-option"
-                  style="cursor: pointer">35기</a>
-              </li>
-
-              <li>
-                <a data-value="ssmenu1"
-                  href="javascript: selcid(34)"
-                  class="dropselect-option"
-                  style="cursor: pointer">34기</a>
-              </li>
-              <li>
-                <a data-value="ssmenu1"
-                  href="javascript: selcid(33)"
-                  class="dropselect-option"
-                  style="cursor: pointer">33기</a>
-              </li>
-            </ul>
-        </div>
-      </div>
+        
     </div>
 
-    <input id='add_project'    
-     type='button'
-     onclick='newPage()'
-     value='+추가' />
+    <form action="/write" method="get">
+        <input id="add_project" type="submit" onclick="newPage()" value="+추가" />
+    </form>
 
     <div class = "project_area2">
         <ul class="project_list">
@@ -187,7 +155,7 @@
                         target="_blank"><img
                           src="./notion_logo.png"
                           title="go notion"
-                          style="width: 37px;margin-bottom: -8px; margin-left: -4px;"/></a>
+                          style="width: 40px;margin-bottom: -8px; margin-left: -4px;"/></a>
                     </li>
                   </ul>
                 </dd>
@@ -220,7 +188,7 @@
                         target="_blank"><img
                           src="./notion_logo.png"
                           title="go notion"
-                          style="width: 37px;margin-bottom: -8px; margin-left: -4px;"/></a>
+                          style="width: 40px;margin-bottom: -8px; margin-left: -4px;"/></a>
                     </li>
                   </ul>
                 </dd>
